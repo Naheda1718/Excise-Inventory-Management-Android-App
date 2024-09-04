@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Province"
+        android:inputType="text"
+
+
+
+        android:background="@drawable/shape"
+        android:backgroundTint="#E1414249"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionSearch"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5FAA13"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="Date       "
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Province "
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <TextView
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Adjustments"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/txtrcvcommt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Adjustment Reason"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Done By"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Edit"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Delete"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lstadjustment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#AAA0A0"
+                android:dividerHeight="1dp"
+                android:background="@android:color/holo_orange_dark"
+                android:scrollbars="horizontal|vertical" />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/buttonsLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginTop="20dp"-->
+
+    <!--        android:gravity="center">-->
+
+    <!--        &lt;!&ndash; Button 1 &ndash;&gt;-->
+    <!--        <Button-->
+    <!--            android:id="@+id/button1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Home"/>-->
+
+    <!--        &lt;!&ndash; Add some spacing between buttons &ndash;&gt;-->
+    <!--        <Space-->
+    <!--            android:layout_width="16dp"-->
+    <!--            android:layout_height="match_parent"/>-->
+
+    <!--        &lt;!&ndash; Button 2 &ndash;&gt;-->
+    <!--        <Button-->
+    <!--            android:id="@+id/barcodescan"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Barcode Scan"/>-->
+
+    <!--    </LinearLayout>-->
+
+
+
+</RelativeLayout>

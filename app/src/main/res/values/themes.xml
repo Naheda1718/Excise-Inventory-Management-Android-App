@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#5FAA13</item>
+        <!-- Dark mode attributes -->
+        <item name="colorPrimary">#5FAA13</item>
+        <!-- Customize your light theme here. -->
+
+    </style>
+
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+    <style name="Theme.MyApplication.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+    </style>
+
+    <style name="Base.Theme.MyApplication.Dark" parent="Base.Theme.MyApplication">
+        <!-- Dark mode status bar color -->
+        <item name="android:statusBarColor">#5FAA13</item>
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:statusBarColor">#5FAA13</item>
+        <item name="searchViewStyle">@style/AppSearchView</item>
+    </style>
+
+    <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="MyMaterialTextViewStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize the border color for dark theme here -->
+        <item name="boxStrokeColor">#5FAA13</item>
+    </style>
+
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+
+    <style name="SpinnerTextStyleLight" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">#fff</item> <!-- Set text color to custom color -->
+    </style>
+
+    <!-- styles.xml (Dark Mode) -->
+    <style name="SpinnerTextStyleDark" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">#fff</item> <!-- Set text color to custom color -->
+    </style>
+
+    <style name="SpinnerDropdownStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:background">@color/black</item> <!-- Set background color to black -->
+    </style>
+</resources>

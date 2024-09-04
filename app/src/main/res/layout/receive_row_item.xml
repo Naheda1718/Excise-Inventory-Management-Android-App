@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="horizontal">
+
+
+
+
+    <TextView
+        android:id="@+id/txtrcvdatetime"
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="DateTime"
+
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#AAA0A0"/>
+
+    <TextView
+        android:id="@+id/txtrcvprname"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="RecievedBy"
+        android:textSize="18sp"
+        android:textColor="#AAA0A0"/>
+
+    <TextView
+        android:id="@+id/txtrcvexcise"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#AAA0A0"
+
+        android:text="Recieve_From"
+        />
+
+
+    <TextView
+        android:id="@+id/txtrcvstamp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:textColor="#AAA0A0"
+        android:gravity="center"
+
+        android:text="Product_name"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/txtrcvlocation"
+
+
+
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:textColor="#AAA0A0"
+
+
+        android:textSize="18sp"
+        android:text="Product_type"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtrcvaddcmt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:textColor="#AAA0A0"
+        android:gravity="center"
+
+
+        android:textSize="18sp"
+
+
+        android:text="Weight"
+
+        />
+    <TextView
+        android:id="@+id/txtrcvdoneby"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:textColor="#AAA0A0"
+        android:gravity="center"
+
+
+        android:textSize="18sp"
+        android:text="Quantity"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcvedit"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:src="@drawable/baseline_mode_edit_24">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcvdelete"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:src="@drawable/baseline_delete_24">
+
+    </ImageView>
+
+
+
+    <!-- Add more TextViews here for additional details -->
+
+</LinearLayout>

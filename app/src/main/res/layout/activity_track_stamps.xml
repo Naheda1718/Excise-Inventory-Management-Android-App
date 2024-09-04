@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C0C"
+    android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/track_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#5FAA13"
+            android:elevation="4dp"
+            android:theme="?attr/actionBarTheme"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:hintEnabled="true"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inprocessdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date*"
+
+
+            android:textColor="@color/black"
+
+            app:shapeAppearanceOverlay="@drawable/shape"
+
+            android:focusable="false"
+            android:layout_marginTop="10dp"
+
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/statespinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/shape"
+        />
+
+
+    <ImageView
+        android:id="@+id/stateimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </ImageView>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/stamptaken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No Of Stamps Taken*"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/checkboxtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            android:text="Confirm stamps matches selected province* ">
+
+        </TextView>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stampcheckbox">
+
+        </CheckBox>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name*"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:inputType="text"
+            android:layout_marginTop="10dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:hintEnabled="true"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/skulot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lot number*"
+                app:shapeAppearanceOverlay="@drawable/shape"
+                android:inputType="text"
+                android:layout_marginTop="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/datepicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Packaging Date(YYYY-MM-DD)*"
+            app:shapeAppearanceOverlay="@drawable/shape"
+android:inputType="date"
+            android:maxLength="10"
+            android:layout_marginTop="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location where used*"
+            android:inputType="text"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:layout_marginTop="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:hintEnabled="true"
+
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/returntoinv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Stamps return to inventory"
+                android:inputType="number"
+                app:shapeAppearanceOverlay="@drawable/shape"
+                android:layout_marginTop="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:hintEnabled="true"
+
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/stampdamaged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Damaged Stamps"
+
+                android:inputType="number"
+                app:shapeAppearanceOverlay="@drawable/shape"
+                android:layout_marginTop="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:hintEnabled="true"
+
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/damagereasn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Damage reason"
+                android:inputType="text"
+                app:shapeAppearanceOverlay="@drawable/shape"
+                android:layout_marginTop="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/tracksubmit"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

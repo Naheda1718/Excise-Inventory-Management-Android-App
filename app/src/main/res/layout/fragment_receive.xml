@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Product"
+        android:inputType="text"
+
+
+
+        android:background="@drawable/shape"
+        android:backgroundTint="#E1414249"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+android:layout_marginTop="10dp"
+        android:imeOptions="actionSearch"
+
+    />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5FAA13"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtrcvdatetime"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="Date  "
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/txtrcvprname"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Province    "
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txtrcvexcise"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Excise Matches Province"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+
+
+                <TextView
+                    android:id="@+id/txtrcvstamp"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Stamp    Received"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtrcvlocation"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Disposition Location"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+
+
+                <TextView
+                    android:id="@+id/txtrcvaddcmt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Additional Comment"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txtrcvdoneby"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Received    By"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Edit"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+
+                    android:text="Delete"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+
+
+            </LinearLayout>
+
+
+
+            <ListView
+                android:id="@+id/lstrcvitems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#AAA0A0"
+                android:dividerHeight="1dp"
+                android:background="@android:color/holo_orange_dark"
+                android:scrollbars="horizontal|vertical" />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ecel"
+        app:maxImageSize="70dp"
+        app:tint="@null" />
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/buttonsLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginTop="20dp"-->
+
+    <!--        android:gravity="center">-->
+
+    <!--        &lt;!&ndash; Button 1 &ndash;&gt;-->
+    <!--        <Button-->
+    <!--            android:id="@+id/button1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Home"/>-->
+
+    <!--        &lt;!&ndash; Add some spacing between buttons &ndash;&gt;-->
+    <!--        <Space-->
+    <!--            android:layout_width="16dp"-->
+    <!--            android:layout_height="match_parent"/>-->
+
+    <!--        &lt;!&ndash; Button 2 &ndash;&gt;-->
+    <!--        <Button-->
+    <!--            android:id="@+id/barcodescan"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Barcode Scan"/>-->
+
+    <!--    </LinearLayout>-->
+
+
+</RelativeLayout>
+

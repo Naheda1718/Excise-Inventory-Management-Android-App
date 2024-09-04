@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#0C0C0C"
+
+    android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="vertical">
+    <!-- Row for ID and its value -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID "
+            android:layout_marginRight="199dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerend_id"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_height="30dp"
+
+            android:background="@drawable/processend_border"
+            />
+
+    </LinearLayout>
+
+    <!-- Row for product name and its value -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date "
+            android:layout_marginRight="180dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_Date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+
+            android:paddingLeft="10dp"
+            android:background="@drawable/processend_border"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Province Name "
+            android:textColor="@color/white"
+            android:layout_marginRight="105dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_Province"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:background="@drawable/processend_border"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stamps Taken"
+            android:layout_marginRight="115dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_stampstaken"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/processend_border"
+android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stamp Matches "
+            android:textColor="@color/white"
+            android:layout_marginRight="100dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_matches"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/processend_border"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name "
+            android:textColor="@color/white"
+            android:layout_marginRight="110dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_Productname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/processend_border"
+android:textColor="@color/white"
+         android:paddingLeft="10dp"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lot Number #"
+            android:textColor="@color/white"
+            android:layout_marginRight="119dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_lotno"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/processend_border"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Packaged Date"
+            android:textColor="@color/white"
+            android:layout_marginRight="110dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_packageddate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/processend_border"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location "
+            android:layout_marginRight="152dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_location"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/processend_border"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stamps Returns To Inventory*"
+            android:textColor="@color/white"
+
+            android:layout_marginRight="7dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/end_stampsreturntoinv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+           android:paddingLeft="10dp"
+            android:inputType="number"
+            android:background="@drawable/processend_border"
+android:textColor="@color/white"
+            android:hint=""
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number Of Damage Stamps * "
+            android:textColor="@color/white"
+            android:layout_marginRight="3dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/end_Damagestamps"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:background="@drawable/processend_border"
+android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason For Damage*"
+           android:textColor="@color/white"
+            android:layout_marginRight="66dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/end_reasonfordamage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:background="@drawable/processend_border"
+            android:paddingLeft="10dp"
+            android:minLines="2"
+            android:maxLines="10"
+            android:textColor="@color/white"
+
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/endbutton"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:inputType="textMultiLine"
+        android:backgroundTint="#5FAA13"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>
+
+    <!-- Add more rows for other data fields as needed -->
+
+</ScrollView>

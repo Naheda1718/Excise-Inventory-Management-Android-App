@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:padding="16dp">
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recieve_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:hint="Recived From"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/productname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/producttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Type"
+            android:inputType="text"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:layout_marginTop="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lot No"
+            android:inputType="text"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:layout_marginTop="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product weight"
+
+            android:inputType="text"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:layout_marginTop="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="text"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:layout_marginTop="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:orientation="horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        app:hintEnabled="true"
+
+
+        android:layout_marginTop="10dp">
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tote"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="Product ID"
+          android:paddingLeft="10dp"
+            android:editable="false"
+            android:enabled="false"
+            app:shapeAppearanceOverlay="@drawable/shape"
+
+            android:gravity="center"
+
+
+
+           />
+
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            app:hintEnabled="true"
+            android:layout_marginLeft="5dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+
+
+
+
+                android:paddingLeft="10dp"
+
+android:editable="false"
+
+               android:id="@+id/textviewscan"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:focusable="false"
+                android:clickable="true"
+                app:shapeAppearanceOverlay="@drawable/shape"
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Scan barcode or QR"
+              />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:inputType="text"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+
+
+</LinearLayout>

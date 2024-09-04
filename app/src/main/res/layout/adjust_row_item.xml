@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="horizontal">
+
+
+
+
+    <TextView
+        android:id="@+id/txtadjustdate"
+
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="date"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#AAA0A0"/>
+
+    <TextView
+        android:id="@+id/txtadjustprovince"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+
+        android:text="Provincename"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#AAA0A0"/>
+
+    <TextView
+        android:id="@+id/txtadjustvalue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#AAA0A0"
+
+        android:text="adjustvalue"
+        />
+
+    <TextView
+        android:id="@+id/txtadjustreason"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="adjust reason"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#AAA0A0"
+        />
+
+    <TextView
+        android:id="@+id/txtadjustdoneby"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="doneby"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#AAA0A0"
+        />
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjustedit"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:src="@drawable/baseline_mode_edit_24">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjustdelete"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:src="@drawable/baseline_delete_24">
+
+    </ImageView>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Add more TextViews here for additional details -->
+
+</LinearLayout>

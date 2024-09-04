@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C0C"
+    android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Excise_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#5FAA13"
+        android:elevation="4dp"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+        <Spinner
+            android:id="@+id/statespinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+
+            android:background="@drawable/shape"
+
+            />
+
+        <ImageView
+            android:id="@+id/stateimage"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="200dp">
+
+        </ImageView>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+
+
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/checkboxtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+
+        android:text="Confirm stamps matches selected province*">
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/checkbox_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        />
+
+
+
+</LinearLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:hintEnabled="true"
+        android:textColorHint="#A3DFE1DD"
+
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/stamprcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number Of Stamps Received*"
+
+            android:inputType="number"
+            android:textColor="@color/white"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:layout_marginTop="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A3DFE1DD"
+
+            app:hintEnabled="true"
+
+            android:layout_marginTop="10dp"
+           >
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/receivedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Received (Select Date)*"
+
+
+android:textColor="@color/white"
+
+                app:shapeAppearanceOverlay="@drawable/shape"
+
+                android:focusable="false"
+                android:layout_marginTop="10dp"
+
+                >
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#A3DFE1DD"
+
+        app:hintEnabled="true"
+
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/stamplocat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Disposition Location*"
+            android:inputType="text"
+            android:textColor="@color/white"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:layout_marginTop="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A3DFE1DD"
+
+            app:hintEnabled="true"
+
+            >
+        <EditText
+            android:id="@+id/add_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional Comment"
+      android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            android:minLines="2"
+            android:maxLines="10"
+            app:shapeAppearanceOverlay="@drawable/shape"
+            android:layout_marginTop="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:inputType="textMultiLine"
+        android:backgroundTint="#5FAA13"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app2"
+        android:label="Excise Management"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <activity
+            android:name=".forgotpassword"
+            android:exported="false"
+            android:label="@string/title_activity_forgotpassword"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".Excise_management"
+            android:exported="false"
+            android:label="@string/title_activity_excise_management"
+            android:parentActivityName=".drawer"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".Inprocess_section"
+            android:exported="false"
+            android:label="@string/title_activity_inprocess_section"
+            android:parentActivityName=".Excise_management"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".excise_adjustvalue"
+            android:exported="false"
+            android:parentActivityName=".Excise_management" />
+        <activity
+            android:name=".excise_report"
+            android:exported="false"
+            android:label="@string/title_activity_excise_report"
+            android:parentActivityName=".Excise_management"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".excise_inventory"
+            android:exported="false"
+            android:parentActivityName=".Excise_management" />
+        <activity
+            android:name=".productionend"
+            android:exported="false" />
+        <activity
+            android:name=".inprocess_excise"
+            android:exported="false" />
+        <activity
+            android:name=".rtvproduct"
+            android:exported="false" />
+        <activity
+            android:name=".track_stamps"
+            android:exported="false"
+            android:parentActivityName=".Excise_management" />
+        <activity
+            android:name=".receive_stamps"
+            android:exported="false"
+            android:parentActivityName=".Excise_management" />
+        <activity
+            android:name=".drawer"
+            android:exported="true"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".showdetails"
+            android:exported="false"
+            android:parentActivityName=".drawer" />
+        <activity
+            android:name=".ItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
